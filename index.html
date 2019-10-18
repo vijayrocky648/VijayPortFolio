@@ -18,7 +18,7 @@
         	display:none;
         }
         .main-head p{
-        	font-size:25px;
+        	font-size:20px;
         }
         #about-heading{
            text-align:center;
@@ -41,14 +41,11 @@
         }
         #body-companyname{
         	display:none;
-        }    
-        
-	 }
-
-    .main-head{
-       background-image:url('img/blur-cars-city-1668928.jpg');
-       background-size: cover;       
-    }
+        }
+        .main-head{
+        	height:400px;
+        }               
+	 }    
     .about{
     	height:auto;
     }
@@ -110,7 +107,7 @@
  <!---Header Part--->
  <!------main page -------> 
  <div id ="right" style="height:100vh;">
- 	 <div style="height:800px;"class="main-head">
+ 	 <div style="height:800px;background-image:url('img/blur-cars-city-1668928.jpg');background-size: cover;" class="main-head">
  	<p class="display-4 text-right" style="color: white;padding-right:8%;font-family: 'Cabin', sans-serif;padding-top:10%;text-transform:uppercase;">
  		Get up earlier-Stay Longer <br>Work Harder <br>Fail-Fail again <br><span style="background-color:#00818a;font-weight:bold;">Never ever Quit</span>
  	</p>
@@ -213,11 +210,15 @@ $(document).ready(function() {
      $('.custom-head').css({
      	'display': 'none',    	
      });
+
   }else{
   	$('.custom-head').css({
      	'display': 'block',     	
      	'color':'#7c0a02'   	
      });
+  	$('.main-head').css({
+  		'height': '400px',  		
+  	});
     $('.cams-head').addClass('justify-content-center')
   } 
 
@@ -228,11 +229,17 @@ $(document).ready(function() {
      $('.custom-head').css({
      	'display': 'none',     	
      });
+     $('.main-head').css({
+  		'height': '800px',  		
+  	});
   }else{
   	$('.custom-head').css({
      	'display': 'block',
      	'color':'#00818a'     	
      });
+  	$('.main-head').css({
+  		'height': '400px',  		
+  	});
    $('.cams-head').addClass('justify-content-center')
   }
  });
