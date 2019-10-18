@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PortFolio</title>
+    <link rel="stylesheet" href="css/bounce.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
@@ -12,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300|Raleway&display=swap" rel="stylesheet">
     <style>
-	 @media (max-width:1000px){
+	 @media (max-width:1320px){
         .title-custom{
         	display:none;
         }
@@ -32,8 +33,18 @@
         #about-content label{
         	font-size:15px;
         }
+        #cams-head p{
+        	display: none;
+        } 
+        #cams-head{
+        	justify-content:center;
+        }
+        #body-companyname{
+        	display:none;
+        }    
         
 	 }
+
     .main-head{
        background-image:url('img/blur-cars-city-1668928.jpg');
        background-size: cover;       
@@ -42,7 +53,7 @@
     	height:auto;
     }
     #left {
-     flex-grow: 1;
+     flex-grow: 5;
   
    }
    #right {
@@ -51,25 +62,33 @@
    }
    div p{
    	font-family: 'Nanum Gothic', sans-serif;
-   }
-   @media (min-width:500px) and (max-width:1000px){
-   	
-   }
+   } 
+    li{
+
+    	transition:background;
+    	transition-duration:.5s;        
+    }
+    li:hover{
+    	background-color:grey;
+    	color:#940a37;
+    	font-weight:700;
+    }
+
     </style>
 </head>
 <body>
 <div class="d-flex" id ="left">
-<div  class="side-bar">
-<ul class="sidenav-simple sidenav-simple-expand-sm h-auto" data-shift=".shifted-content" style="margin:0px;padding:0px;">
+<div  class="side-bar" style="background-color:#e3e7f1;border-right:1px solid gray">
+<ul class="sidenav-simple sidenav-simple-expand-sm h-auto" data-shift=".shifted-content" style="margin:0px;padding:0px;background-color:#e3e7f1">
 	<div class="title-custom" style="height:80px;border-bottom:solid 1px grey">
-		<h4 style="font-size:20px;text-align:center;color:#7c0a02">Vijay</h4>
+		<h4 style="font-size:20px;text-align:center;color:#7c0a02;font-weight:600;">Vijay</h4>
 		<h4 style="font-size:15px;text-align:center;">Full Stack Developer</h4>
 	</div>
 	<li><a href="#about">
         <span class="icon"><img src="img/icons8-about-48.png" style="height:30px;width:30px;"></span>
         <span class="title">About</span>
     </a></li>
-    <li><a href="#">
+    <li><a href="#Experience">
         <span class="icon"><img src="img/icons8-graph-100.png" style="height:30px;width:30px;"></span>
         <span class="title">Experience</span>
     </a></li>
@@ -124,13 +143,60 @@
 
 
  <!----Experience------->  
-<div class="experience" id="experience"  style="background-color:#e3e7f1;height:800px;">
- 	<p id="experience-heading" style="background-color:#00818a;color:white;padding-left:35px;font-family: 'Open Sans Condensed', sans-serif;, sans-serif;;height:120px;font-size:50px;font-weight:lighter;box-shadow: 10px 7px 112px -50px rgba(0,0,0,0.75);padding-top:20px;font-weight:100;word-spacing:1em">EXPERIENCE</p>
-<!-----Experience-content---->
- 	
-
- <!-----Experience-content---->
- </div> 
+<div class="Experience" id="Experience"  style="background-color:#e3e7f1">
+	<!-----Experience-heading---->
+  <p id="about-heading" style="background-color:#00818a;color:white;padding-left:35px;font-family: 'Open Sans Condensed', sans-serif;, sans-serif;;height:120px;font-size:50px;font-weight:lighter;box-shadow: 10px 7px 112px -50px rgba(0,0,0,0.75);padding-top:20px;font-weight:100;word-spacing:1em">EXPERIENCE</p>
+	<!-----Experience-heading---->
+	<!-----Experience-content---->
+	<div class="container">
+		<div class="row justify-content-center" style="height:auto;">
+			<div class="col-md-7 col-sm-4">
+				<div class="card" style="margin-top:15%;box-shadow: 10px 10px 40px -16px rgba(74,68,74,1);" id="card-main">
+					<div class="card-body">
+						<div class="card-title d-flex align-items-center" id="cams-head">
+							<img src="img/rsz_download.jpg">
+							<p style="font-family:'Nanum Gothic',sans-serif;margin-left:10%;font-size:26px;font-weight:bold;color:#003f5c" id="company-name">CAMS</p>
+							<p style="font-family: 'Nanum Gothic', sans-serif;margin-left:15%;font-size:15px;font-weight:bold;color:#5b0909;"id="remove-des">Assitant Processing Officer</p>
+						</div>
+						<hr style="border-top:.05px solid gray;">
+						<div class="card-body">
+							<p style="visibility:visible;text-align:center;" id="body-companyname">CAMS</p>
+							<h4 style="color:#5b0909">About Company</h4>
+							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">Computer Age Management Services (CAMS) is a Mutual Fund Transfer Agency to the Indian Asset Management Companies with a share of 65% of the assets under management (AuM). The company was incorporated in year 1988.</p>
+							<h5 style="color:#5b0909">Assistant Processing Officer</h5>
+							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">Processing Day to Day Mutual Fund Application into the DataBase and Taking Care of Customer Query</p>
+						</div>
+						<div class="card-footer">
+							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">2017-2018 Nugambakkam,Chennai</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7 col-sm-4">
+				<div class="card" style="margin-top:10%;box-shadow: 10px 10px 40px -16px rgba(74,68,74,1);" id="card-main">
+					<div class="card-body">
+						<div class="card-title d-flex align-items-center" id="cams-head">
+							<img src="img/novac.jpg">
+							<p style="font-family:'Nanum Gothic',sans-serif;margin-left:10%;font-size:26px;font-weight:bold;color:#003f5c" id="company-name">NOVAC</p>
+							<p style="font-family: 'Nanum Gothic', sans-serif;margin-left:15%;font-size:15px;font-weight:bold;color:#5b0909;"id="remove-des">Software Engineer</p>
+						</div>
+						<hr style="border-top:.05px solid gray;">
+						<div class="card-body">							
+							<h4 style="color:#5b0909">About Company</h4>
+							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">NOVAC is a CMMI Level 5 Certified IT & ITES arm of Shriram Group with a strong technology and domain expertise in Financial Services, Insurance and E-commerce industries, with a proven track record of delivering high quality business solutions.</p>
+							<h5 style="color:#5b0909">Software Engineer</h5>
+							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">Creating Application Based on the Client Request and Providing Support to the Client</p>
+						</div>
+						<div class="card-footer">
+							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">2018-Present Myplapore,Chennai</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>   
+	<!-----Experience-content---->
+</div>
  <!----Experience------->  
  </div>
 </div>
@@ -142,8 +208,8 @@
 <script src="js/bootstrap.bundle.js"></script>
 <script href="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
 <script>
-$(document).ready(function() {
-  if ($(window).width() > 960) {
+$(document).ready(function() { 
+  if ($(window).width() > 1320) {
      //alert('Less than 960');
      $('.custom-head').css({
      	'display': 'none',     	
@@ -153,10 +219,12 @@ $(document).ready(function() {
      	'display': 'block', 
      	'color':'#00818a'    	
      });
-  }
+    $('.cams-head').addClass('justify-content-center')
+  } 
+
  $(window).resize(function(event) {
  	/* Act on the event */
- 	if ($(window).width() > 960) {
+ 	if ($(window).width() > 1320) {
      //alert('Less than 960');
      $('.custom-head').css({
      	'display': 'none',     	
@@ -166,8 +234,14 @@ $(document).ready(function() {
      	'display': 'block',
      	'color':'#00818a'     	
      });
+   $('.cams-head').addClass('justify-content-center')
   }
  });
-});
+}); 
+ /*$('ul li').mouseenter(function(event) {
+ 	$(this).find('img').addClass('animation-target')
+ }).mouseleave(function(event) {
+ 	$(this).find('img').removeClass('animation-target')
+ });*/
 </script>
 </html>
