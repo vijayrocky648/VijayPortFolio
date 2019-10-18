@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PortFolio</title>
-    <link rel="stylesheet" href="css/bounce.css">
+    <title>PortFolio</title>    
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/metro-all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300|Raleway&display=swap" rel="stylesheet">
-    <style>
+    <style>    	
 	 @media (max-width:1320px){
         .title-custom{
         	display:none;
@@ -155,8 +155,7 @@
 							<p style="font-family: 'Nanum Gothic', sans-serif;margin-left:15%;font-size:15px;font-weight:bold;color:#5b0909;"id="remove-des">Assitant Processing Officer</p>
 						</div>
 						<hr style="border-top:.05px solid gray;">
-						<div class="card-body">
-							<p style="visibility:visible;text-align:center;" id="body-companyname">CAMS</p>
+						<div class="card-body">							
 							<h4 style="color:#5b0909">About Company</h4>
 							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">Computer Age Management Services (CAMS) is a Mutual Fund Transfer Agency to the Indian Asset Management Companies with a share of 65% of the assets under management (AuM). The company was incorporated in year 1988.</p>
 							<h5 style="color:#5b0909">Assistant Processing Officer</h5>
@@ -243,10 +242,13 @@ $(document).ready(function() {
   }
  });
 }); 
- /*$('ul li').mouseenter(function(event) {
- 	$(this).find('img').addClass('animation-target')
+ $('ul li').mouseenter(function(event) {
+ 	$(this).find('img').addClass('animated jello')
  }).mouseleave(function(event) {
- 	$(this).find('img').removeClass('animation-target')
- });*/
+ 	$(this).find('img').removeClass('animated jello')
+ });
+ $(window).ready(function(event) {
+ 	$(this).find('p').addClass('animated lightSpeedIn')
+ });
 </script>
 </html>
