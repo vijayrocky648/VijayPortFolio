@@ -192,12 +192,12 @@
 	<!-----Experience-content---->
 </section>
  <!----Experience------->  
- <section class="Projects" id="Projects">
+ <section class="Projects" id="Projects" style="background-color:#e3e7f1">
  	 <p id="about-heading" style="background-color:#00818a;color:white;padding-left:35px;font-family: 'Open Sans Condensed', sans-serif;, sans-serif;;height:120px;font-size:50px;font-weight:lighter;box-shadow: 10px 7px 112px -50px rgba(0,0,0,0.75);padding-top:20px;font-weight:100;word-spacing:1em">PROJECTS</p>
 
- 	 <div class="container">
- 	 	<div class="row" style="margin-top:5%;">
- 	 		<div class="col-md-4 col-sm-12">
+ 	 <div class="container" style="background-color:">
+ 	 	<div class="row d-flex justify-content-center" style="margin-top:5%;">
+ 	 		<div class="col-md-4 ">
  	 			<div class="card" id="project1-primary" style="box-shadow: 10px 10px 40px -16px rgba(74,68,74,1);" >
  	 			<img src="img/img.jpg" class="card-img card-img-top">
  	 			<p class="card-title text-center" style="font-weight:bold;color:#003f5c;cursor:pointer;" id="btn-click1-primary">Weather Forcast</p>
@@ -220,7 +220,7 @@
  	 				</div>
  	 			</div>
  	 		</div>
- 	 		<div class="col-md-4 col-sm-12"  >
+ 	 		<div class="col-md-4 col-sm-12 offset-md-1"  >
  	 			<div class="card" id="project1-primary" style="box-shadow: 10px 10px 40px -16px rgba(74,68,74,1);"> 
  	 			<img src="img/img.jpg" class="card-img card-img-top">
  	 			<p class="card-title text-center" style="font-weight:bold;color:#003f5c;cursor:pointer;" id="btn-click2-primary">Weather Forcast</p>
@@ -243,6 +243,53 @@
  	 				</div>
  	 			</div>
  	 		</div>
+ 	 		<div class="col-md-4 ">
+ 	 			<div class="card" id="project3-primary" style="box-shadow: 10px 10px 40px -16px rgba(74,68,74,1);" >
+ 	 			<img src="img/img.jpg" class="card-img card-img-top">
+ 	 			<p class="card-title text-center" style="font-weight:bold;color:#003f5c;cursor:pointer;" id="btn-click3-primary">Weather Forcast</p>
+ 	 			<div class="card-body">
+ 	 				<p style="color:#7c0a02;font-weight:bold;font-family: 'Raleway', sans-serif;">Weather Web Application which is used to see Daily Weather Forcast Weather</p>
+ 	 			</div>
+ 	 			</div>
+ 	 			<div class="card" style="height:350px;box-shadow: 10px 7px 112px -50px rgba(0,0,0,0.75);" id="project3-secoundary">
+ 	               <div class="d-flex justify-content-center">
+ 	               	<p class="card-title " style="margin-top:5%;font-weight:bold;color:#003f5c;cursor:pointer;" id="btn-click3-secoundary">Tool Used For Application 	               	
+ 	 				</p> 	 				
+ 	 			</div>
+ 	 				<div class="card-body">
+ 	 					<ul class="list-group list-unstyled">
+ 	 						<li class="list-group-item" style="background:none;font-weight:bold;">Used Api to get Current ForCase</li>
+ 	 						<li class="list-group-item" style="background:none;font-weight:bold;">Used HTML,CSS,BOOTSTRAP,JQUERY,AJAX</li>
+ 	 						<li class="list-group-item" style="background:none;font-weight:bold;">I Had Done This Code in Visual Studio,Not Yet Hosted For Public, Link Below for the Source Code</li>
+ 	 						<a href="" class="card-link text-center m-2">Click Here For the Source Code</a>
+ 	 					</ul>
+ 	 				</div>
+ 	 			</div>
+ 	 		</div>
+ 	 		<div class="col-md-4 col-sm-12 offset-md-1">
+ 	 			<div class="card" id="project4-primary" style="box-shadow: 10px 10px 40px -16px rgba(74,68,74,1);" >
+ 	 			<img src="img/img.jpg" class="card-img card-img-top">
+ 	 			<p class="card-title text-center" style="font-weight:bold;color:#003f5c;cursor:pointer;" id="btn-click4-primary">Weather Forcast</p>
+ 	 			<div class="card-body">
+ 	 				<p style="color:#7c0a02;font-weight:bold;font-family: 'Raleway', sans-serif;">Weather Web Application which is used to see Daily Weather Forcast Weather</p>
+ 	 			</div>
+ 	 			</div>
+ 	 			<div class="card" style="height:350px;box-shadow: 10px 7px 112px -50px rgba(0,0,0,0.75);" id="project4-secoundary">
+ 	               <div class="d-flex justify-content-center">
+ 	               	<p class="card-title " style="margin-top:5%;font-weight:bold;color:#003f5c;cursor:pointer;" id="btn-click4-secoundary">Tool Used For Application 	               	
+ 	 				</p> 	 				
+ 	 			</div>
+ 	 				<div class="card-body">
+ 	 					<ul class="list-group list-unstyled">
+ 	 						<li class="list-group-item" style="background:none;font-weight:bold;">Used Api to get Current ForCase</li>
+ 	 						<li class="list-group-item" style="background:none;font-weight:bold;">Used HTML,CSS,BOOTSTRAP,JQUERY,AJAX</li>
+ 	 						<li class="list-group-item" style="background:none;font-weight:bold;">I Had Done This Code in Visual Studio,Not Yet Hosted For Public, Link Below for the Source Code</li>
+ 	 						<a href="" class="card-link text-center m-2">Click Here For the Source Code</a>
+ 	 					</ul>
+ 	 				</div>
+ 	 			</div>
+ 	 		</div>
+
 
  	 	</div>
  	 </div>
@@ -302,37 +349,65 @@ $(document).ready(function() {
  	$(this).find('img').removeClass('animated jello')
  });
  $(document).ready(function(event) {
- 	$(this).find('p').addClass('animated lightSpeedIn')
+ 	$('.main-head').find('p').addClass('animated lightSpeedIn')
  });
  //////////////////////////////////////Button click in project event//////
 $(document).ready(function() {
  	$('#project1-secoundary').hide();
  	$('#project2-secoundary').hide();
+ 	$('#project3-secoundary').hide();
+ 	$('#project4-secoundary').hide();
  });
 $('#btn-click1-primary').click(function(event) {
 	/* Act on the event */
     $(this).parent().parent().children().first().hide();
-     $(this).parent().parent().children().last().addClass('animated rubberBand');
+     $(this).parent().parent().children().last().children().addClass('animated bounceInUp');
     $(this).parent().parent().children().last().show();
 });
 $('#btn-click1-secoundary').click(function(event) {
 	/* Act on the event */
     
     $(this).parent().parent().parent().children().last().hide();
-    $(this).parent().parent().parent().children().first().addClass('animated rubberBand');
+    $(this).parent().parent().parent().children().first().children().addClass('animated bounceInUp');
     $(this).parent().parent().parent().children().first().show();
 });
 $('#btn-click2-primary').click(function(event) {
 	/* Act on the event */
     $(this).parent().parent().children().first().hide();
-     $(this).parent().parent().children().last().addClass('animated rubberBand');
+     $(this).parent().parent().children().last().children().addClass('animated bounceInUp');
     $(this).parent().parent().children().last().show();
 });
 $('#btn-click2-secoundary').click(function(event) {
 	/* Act on the event */
     
     $(this).parent().parent().parent().children().last().hide();
-    $(this).parent().parent().parent().children().first().addClass('animated rubberBand');
+    $(this).parent().parent().parent().children().first().children().addClass('animated bounceInUp');
+    $(this).parent().parent().parent().children().first().show();
+});
+$('#btn-click3-primary').click(function(event) {
+	/* Act on the event */
+    $(this).parent().parent().children().first().hide();
+     $(this).parent().parent().children().last().children().addClass('animated bounceInUp');
+    $(this).parent().parent().children().last().show();
+});
+$('#btn-click3-secoundary').click(function(event) {
+	/* Act on the event */
+    
+    $(this).parent().parent().parent().children().last().hide();
+    $(this).parent().parent().parent().children().first().children().addClass('animated bounceInUp');
+    $(this).parent().parent().parent().children().first().show();
+});
+$('#btn-click4-primary').click(function(event) {
+	/* Act on the event */
+    $(this).parent().parent().children().first().hide();
+     $(this).parent().parent().children().last().children().addClass('animated bounceInUp');
+    $(this).parent().parent().children().last().show();
+});
+$('#btn-click4-secoundary').click(function(event) {
+	/* Act on the event */
+    
+    $(this).parent().parent().parent().children().last().hide();
+    $(this).parent().parent().parent().children().first().children().addClass('animated bounceInUp');
     $(this).parent().parent().parent().children().first().show();
 });
 </script>
