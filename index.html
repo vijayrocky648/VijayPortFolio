@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PortFolio</title>    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
@@ -50,7 +51,7 @@
     	height:auto;
     }
     #left {
-     flex-grow: 5;
+     flex-grow:100;
   
    }
    #right {
@@ -60,25 +61,20 @@
    div p{
    	font-family: 'Nanum Gothic', sans-serif;
    } 
-    li{
-
+    .sidenav-simple li{
     	transition:background;
-    	transition-duration:.5s;        
+    	transition-duration:.5s;      
     }
-    li:hover{
-    	background-color:grey;
-    	color:#940a37;
-    	font-weight:700;
-	    }	        
+            
     </style>
 </head>
-<body>
-<div class="d-flex" id ="left">
-<div  class="side-bar" style="background-color:#e3e7f1;border-right:1px solid gray">
-<ul class="sidenav-simple sidenav-simple-expand-sm  h-auto"  style="margin:0px;padding:0px;background-color:#e3e7f1;">
-	<div class="title-custom" style="height:80px;border-bottom:solid 1px grey;">
-		<h4 style="font-size:20px;text-align:center;color:#7c0a02;font-weight:600;">Vijay</h4>
-		<h4 style="font-size:15px;text-align:center;">Full Stack Developer</h4>
+<body style="background:url('img/bg.png') repeat;">
+<div class="d-flex" id ="left" box-shadow: 2px 2px 25px -2px #000000;>
+<div  class="side-bar" style="background-color:#fafafa;box-shadow: 2px 2px 14px -3px #000000">
+<ul class="sidenav-simple sidenav-simple-expand-sm  h-auto"  style="margin:0px;padding:0px;background:none;">
+	<div class="title-custom" style="height:80px;border-bottom:solid 2px #801336;">
+		<h4 style="font-size:28px;text-align:center;color:#207561;font-weight:400;">Vijay</h4>
+		<h4 style="font-size:15px;text-align:center;font-weight:200;">Full Stack Developer</h4>
 	</div>
 	<li><a href="#about">
         <span class="icon"><img src="img/icons8-about-48.png" style="height:30px;width:30px;"></span>
@@ -113,7 +109,7 @@
  	</div>
  <!------main page -------> 
  <!---About Section---->
-<section class="about" id="about"  style="background-color:#e3e7f1">
+<section class="about" id="about">
   <!-----about-heading---->
 
  	    <p id="about-heading" style="background-color:#00818a;color:white;padding-left:35px;font-family: 'Open Sans Condensed', sans-serif;, sans-serif;;height:120px;font-size:50px;font-weight:lighter;box-shadow: 10px 7px 112px -50px rgba(0,0,0,0.75);padding-top:20px;font-weight:100;word-spacing:1em">ABOUT</p>
@@ -121,7 +117,7 @@
  <!-----about-heading---->
  <!-----about-content---->
  	<div style="padding-left:10%;font-size:28px;padding-right:5%;" id="about-content">
-     	<blockquote style="margin-top:5%;">
+     	<blockquote style="margin-top:5%;border-left:5px solid #7c0a02;">
      		<p style="color:#7c0a02;font-weight:bold;font-family: 'Raleway', sans-serif;" id="about-content">Mission-driven full stack developer with a passion for thoughtful UI design, collaboration and automation,fullfilling the client request</p>
      	</blockquote>
      	<p>
@@ -131,14 +127,14 @@
      	<p>
      	As a Software Engineer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a high growth company.
         </p><br>
-        <label style="font-weight:bold;font-family: 'Nanum Gothic', sans-serif;">Current Focus:<span style="color:#7c0a02">//Python</span></label>      
+        <label style="font-weight:bold;font-family: 'Nanum Gothic', sans-serif;font-size:25px;margin-bottom:5%;">Current Focus- <span style="color:#7c0a02;font-size:20	px;font-weight:lighter;cursor:pointer;">Python</span></label>      
      </div>
   <!-----about-content---->
 </section>
  <!---About Section---->
 
  <!----Experience------->  
-<section class="Experience" id="Experience"  style="background-color:#e3e7f1">
+<section class="Experience" id="Experience">
 	<!-----Experience-heading---->
   <p id="about-heading" style="background-color:#00818a;color:white;padding-left:35px;font-family: 'Open Sans Condensed', sans-serif;, sans-serif;;height:120px;font-size:50px;font-weight:lighter;box-shadow: 10px 7px 112px -50px rgba(0,0,0,0.75);padding-top:20px;font-weight:100;word-spacing:1em">EXPERIENCE</p>
 	<!-----Experience-heading---->
@@ -192,41 +188,45 @@
 	<!-----Experience-content---->
 </section>
  <!----Experience------->  
- <section class="Projects" id="Projects" style="background-color:#e3e7f1">
+ <section class="Projects" id="Projects">
  	 <p id="about-heading" style="background-color:#00818a;color:white;padding-left:35px;font-family: 'Open Sans Condensed', sans-serif;, sans-serif;;height:120px;font-size:50px;font-weight:lighter;box-shadow: 10px 7px 112px -50px rgba(0,0,0,0.75);padding-top:20px;font-weight:100;word-spacing:1em">PROJECTS</p>
 
  	 <div class="container" style="background-color:">
  	 	<div class="row d-flex justify-content-center" style="margin-top:5%;">
  	 		<div class="col-md-4 ">
+
  	 			<div class="card" id="project1-primary" style="box-shadow: 10px 10px 40px -16px rgba(74,68,74,1);" >
- 	 			<img src="img/img.jpg" class="card-img card-img-top">
- 	 			<p class="card-title text-center" style="font-weight:bold;color:#003f5c;cursor:pointer;" id="btn-click1-primary">Weather Forcast</p>
+ 	 			<img src="img/img.jpg" class="card-img card-img-top"> 	 			
+ 	 			<p class="card-title d-flex justify-content-between align-items-center" style="font-weight:lighter;color:#003f5c;cursor:pointer;padding-left:5%;font-size:28px;" id="btn-click1-primary">Weather Forcast <span class="material-icons" style="margin-right:5%;">subject</span>
+ 	 			</p>
  	 			<div class="card-body">
- 	 				<p style="color:#7c0a02;font-weight:bold;font-family: 'Raleway', sans-serif;">Weather Web Application which is used to see Daily Weather Forcast Weather</p>
+ 	 				<p style="color:#7c0a02;font-weight:200;font-family: 'Raleway', sans-serif;">Experimental Asp.Net WebApplication used to see weather report on daily basis</p>
+ 	 			</div> 	 			
  	 			</div>
- 	 			</div>
+
  	 			<div class="card" style="height:350px;box-shadow: 10px 7px 112px -50px rgba(0,0,0,0.75);" id="project1-secoundary">
  	               <div class="d-flex justify-content-center">
  	               	<p class="card-title " style="margin-top:5%;font-weight:bold;color:#003f5c;cursor:pointer;" id="btn-click1-secoundary">Tool Used For Application 	               	
  	 				</p> 	 				
- 	 			</div>
+ 	 			  </div>
  	 				<div class="card-body">
  	 					<ul class="list-group list-unstyled">
- 	 						<li class="list-group-item" style="background:none;font-weight:bold;">Used Api to get Current ForCase</li>
- 	 						<li class="list-group-item" style="background:none;font-weight:bold;">Used HTML,CSS,BOOTSTRAP,JQUERY,AJAX</li>
- 	 						<li class="list-group-item" style="background:none;font-weight:bold;">I Had Done This Code in Visual Studio,Not Yet Hosted For Public, Link Below for the Source Code</li>
- 	 						<a href="" class="card-link text-center m-2">Click Here For the Source Code</a>
- 	 					</ul>
- 	 				</div>
+ 	 						<li>Used Api to get Current ForCase</li>
+ 	 						<li>Used HTML,CSS,BOOTSTRAP,JQUERY,AJAX</li>
+ 	 						<li>I Had Done This Code in Visual Studio,Not Yet Hosted For Public, Link Below for the Source Code</li> 	 						
+ 	 					</ul> 	 					
+ 	 				</div> 	 
+ 	 				<div class="card-footer" style="height:50px;"><a href="" class="link card-link text-center m-2">Click Here For the Source Code</a></div>
  	 			</div>
  	 		</div>
  	 		<div class="col-md-4 col-sm-12 offset-md-1"  >
- 	 			<div class="card" id="project1-primary" style="box-shadow: 10px 10px 40px -16px rgba(74,68,74,1);"> 
- 	 			<img src="img/img.jpg" class="card-img card-img-top">
- 	 			<p class="card-title text-center" style="font-weight:bold;color:#003f5c;cursor:pointer;" id="btn-click2-primary">Weather Forcast</p>
+ 	 			<div class="card" id="project2-primary" style="box-shadow: 10px 10px 40px -16px rgba(74,68,74,1);" >
+ 	 			<img src="img/img.jpg" class="card-img card-img-top"> 	 			
+ 	 			<p class="card-title d-flex justify-content-between align-items-center" style="font-weight:lighter;color:#003f5c;cursor:pointer;padding-left:5%;font-size:28px;" id="btn-click2-primary">Weather Forcast <span class="material-icons" style="margin-right:5%;">subject</span>
+ 	 			</p>
  	 			<div class="card-body">
- 	 				<p style="color:#7c0a02;font-weight:bold;font-family: 'Raleway', sans-serif;">Weather Web Application which is used to see Daily Weather Forcast Weather</p>
- 	 			</div>
+ 	 				<p style="color:#7c0a02;font-weight:200;font-family: 'Raleway', sans-serif;">Experimental Asp.Net WebApplication used to see weather report on daily basis</p>
+ 	 			</div> 	 			
  	 			</div>
  	 			<div class="card" style="height:350px;box-shadow: 10px 7px 112px -50px rgba(0,0,0,0.75);" id="project2-secoundary">
  	               <div class="d-flex justify-content-center">
@@ -234,10 +234,10 @@
  	 				</p> 	 				
  	 			</div>
  	 				<div class="card-body">
- 	 					<ul class="list-group list-unstyled">
- 	 						<li class="list-group-item" style="background:none;font-weight:bold;">Used Api to get Current ForCase</li>
- 	 						<li class="list-group-item" style="background:none;font-weight:bold;">Used HTML,CSS,BOOTSTRAP,JQUERY,AJAX</li>
- 	 						<li class="list-group-item" style="background:none;font-weight:bold;">I Had Done This Code in Visual Studio,Not Yet Hosted For Public, Link Below for the Source Code</li>
+ 	 					<ul>
+ 	 						<li>Used Api to get Current ForCase</li>
+ 	 						<li>Used HTML,CSS,BOOTSTRAP,JQUERY,AJAX</li>
+ 	 						<li>I Had Done This Code in Visual Studio,Not Yet Hosted For Public, Link Below for the Source Code</li>
  	 						<a href="" class="card-link text-center m-2">Click Here For the Source Code</a>
  	 					</ul>
  	 				</div>
@@ -245,11 +245,12 @@
  	 		</div>
  	 		<div class="col-md-4 ">
  	 			<div class="card" id="project3-primary" style="box-shadow: 10px 10px 40px -16px rgba(74,68,74,1);" >
- 	 			<img src="img/img.jpg" class="card-img card-img-top">
- 	 			<p class="card-title text-center" style="font-weight:bold;color:#003f5c;cursor:pointer;" id="btn-click3-primary">Weather Forcast</p>
+ 	 			<img src="img/img.jpg" class="card-img card-img-top"> 	 			
+ 	 			<p class="card-title d-flex justify-content-between align-items-center" style="font-weight:lighter;color:#003f5c;cursor:pointer;padding-left:5%;font-size:28px;" id="btn-click3-primary">Weather Forcast <span class="material-icons" style="margin-right:5%;">subject</span>
+ 	 			</p>
  	 			<div class="card-body">
- 	 				<p style="color:#7c0a02;font-weight:bold;font-family: 'Raleway', sans-serif;">Weather Web Application which is used to see Daily Weather Forcast Weather</p>
- 	 			</div>
+ 	 				<p style="color:#7c0a02;font-weight:200;font-family: 'Raleway', sans-serif;">Experimental Asp.Net WebApplication used to see weather report on daily basis</p>
+ 	 			</div> 	 			
  	 			</div>
  	 			<div class="card" style="height:350px;box-shadow: 10px 7px 112px -50px rgba(0,0,0,0.75);" id="project3-secoundary">
  	               <div class="d-flex justify-content-center">
