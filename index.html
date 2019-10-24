@@ -97,7 +97,13 @@
     }
     .sidenav-simple li:hover{
     	background:none;
-    }            
+    }
+    .hide{
+    	display:none;
+    }
+    .unhide{
+    	display:block;
+    }             
     </style>
 </head>
 <body style="background:url('img/bg.png') repeat;">
@@ -137,14 +143,23 @@
     <li><a href="#">    	
         <span class="icon"><img src="https://img.icons8.com/color/48/000000/resume.png" style="height:30px;width:30px;"></span>
         <span class="title">Resume</span>
-    </a></li>
+    </a></li>    
 </ul>
+<div style="position:absolute;bottom:0px;">
+    	
+</div>
 </div>
 <!--Content--->
 <div class="container-fluid" style="padding-left:0px;">
 <!---Header Part--->
- <div class="custom-head" style="background-color:#f4f3f3;border-bottom:1px solid gray">    
- 	<p class="text-center "><span style="height:50px;font-size:38px;font-family: 'Montserrat', sans-serif;color:#7c0a02;">Vijay</span><br><span style="color:#347474;font-weight:700;">Software Engineer</span></p>
+ <div class="custom-head" style="background-color:#f4f3f3;border-bottom:1px solid gray" id='custom-head'>        
+ 	<div class="d-flex justify-content-center">
+ 		<i class="material-icons align-self-center" style="position:absolute;left:0px;font-size:50px;cursor:pointer" id="click-nav">list</i>
+ 		<div style="margin-bottom:1%;">
+ 			<h5 style="height:50px;font-size:38px;font-family: 'Montserrat', sans-serif;color:#7c0a02;text-align:center;margin:0;padding:0">Vijay</h5>
+ 			<h5 style="color:#347474;font-weight:100;text-align:center;margin:0;padding:0">Software Engineer</h5>
+ 		</div>
+ 	</div>
  </div>
  <!---Header Part--->
  <!------main page -------> 
@@ -406,15 +421,18 @@
 $(document).ready(function() { 
   if ($(window).width() > 1320) {
      //alert('Less than 960');
-     $('.custom-head').css({
+     $('#custom-head').css({
      	'display': 'none',    	
      });
-
+     /*$('.side-bar').css({
+ 		'display':'block'		
+ 	}); */
+   $('.side-bar').addClass('unhide')
   }else{
-  	$('.custom-head').css({
+  	$('#custom-head').css({
      	'display': 'block',     	
      	'color':'#7c0a02'   	
-     });
+     });  	
   	$('.main-head').css({
   		'height': '400px',  		
   	});
@@ -425,16 +443,17 @@ $(document).ready(function() {
  	/* Act on the event */
  	if ($(window).width() > 1320) {
      //alert('Less than 960');
-     $('.custom-head').css({
+     $('#custom-head').css({
      	'display': 'none',     	
      });
      $('.main-head').css({
   		'height': '800px',  		
   	});
+     $('.side-bar').addClass('unhide')
   }else{
-  	$('.custom-head').css({
+  	$('#custom-head').css({
      	'display': 'block'     	    	
-     });
+     });  	
   	$('.main-head').css({
   		'height': '400px',  		
   	});
@@ -541,6 +560,19 @@ $('.sidenav-simple li').mouseenter(function(event) {
  	});
 
  });
+ $('#click-nav').click(function(event) {
+
+ 	/* Act on the event */ 	
+ 		if($('.side-bar').hasClass('hide')){            
+ 			$('.side-bar').removeClass('hide');
+ 			$('.side-bar').addClass('unhide');
+ 		}else{
+ 		  $('.side-bar').removeClass('unhide');
+           $('.side-bar').addClass('hide');
+ 		}
+ 		
+ });
+
 </script>
 <script src="https://use.fontawesome.com/f55622d881.js"></script>
 </html>
