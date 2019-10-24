@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/metro-all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300|Raleway&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300|Raleway&display=swap" rel="stylesheet">     
     <style>    	
 	 @media screen and  (max-width:1320px){
         .title-custom{
@@ -61,14 +61,7 @@
    div p{
    	font-family: 'Nanum Gothic', sans-serif;
    } 
-    .sidenav-simple li{
-    	transition:background;
-    	transition-duration:.5s;      
-    }
-    .subject li{
-    	margin:1em;
-    	list-style-position: outside;
-    }
+     
     .project-footer{
     	position:absolute;
     	bottom:0px;
@@ -92,19 +85,32 @@
             width: 40px;
             margin-left:10px;            
            }
-    }          
+           #education-content div a h3{
+           	font-size:18px;
+           } 
+           #education-content div h4{
+           	font-size:15px;
+           }
+    }
+    .card-title a:hover{
+    	text-decoration:underline #7c0a02;
+    }
+    .sidenav-simple li:hover{
+    	background:none;
+    }            
     </style>
 </head>
 <body style="background:url('img/bg.png') repeat;">
 <div class="d-flex" id ="left">
-<div  class="side-bar" style="background-color:#fafafc;box-shadow: 2px 2px 14px -3px #000000;border-right:1px solid gray;">
+<div  class="side-bar" style="background-color:#fafafa;box-shadow: 2px 2px 14px -3px #000000;border-right:1px solid gray;">
 <ul class="sidenav-simple sidenav-simple-expand-sm  h-auto"  style="margin:0px;padding:0px;background:none;">
-	<div class="title-custom text-center" style="height:auto;border-bottom:solid 2px #801332;background-color:#f4f9f4">
+	<div class="title-custom text-center" style="height:auto;border-bottom:solid 0.01em gray">
 		<img src="img/WIN_0248.jpg" style="height:60px;width:60px;border-radius:50%;margin-top:2%;">
 		<h4 style="font-size:28px;text-align:center;color:#207561;font-weight:400;">Vijay</h4>
 		<h4 style="font-size:15px;text-align:center;font-weight:200;">Software Engineer</h4>
 	</div>
 	<li style="margin-top:5%;"><a href="#about">
+		<i class="fas fa-user-alt"></i>
         <span class="icon"><img src="img/icons8-about-48.png" style="height:30px;width:30px;"></span>
         <span class="title">About</span>
     </a></li>
@@ -124,7 +130,14 @@
         <span class="icon"><img src="img/icons8-contact-30.png" style="height:30px;width:30px;"></span>
         <span class="title">Contact</span>
     </a></li>
-
+     <li><a href="#Education">    	
+        <span class="icon"><img src="https://img.icons8.com/cotton/50/000000/motarboard.png" style="height:30px;width:30px;"></span>
+        <span class="title">Education</span>
+    </a></li>
+    <li><a href="#">    	
+        <span class="icon"><img src="https://img.icons8.com/color/48/000000/resume.png" style="height:30px;width:30px;"></span>
+        <span class="title">Resume</span>
+    </a></li>
 </ul>
 </div>
 <!--Content--->
@@ -136,9 +149,9 @@
  <!---Header Part--->
  <!------main page -------> 
  <div id ="right" style="height:100vh;">
- 	 <div style="height:800px;background-image:url('img/blur-cars-city-1668928.jpg');background-size:cover;" class="main-head">
+ 	 <div style="height:800px;background-image:url('img/bg_head.jpg');background-size:cover;" class="main-head">
  	<p class="display-4 text-right" style="color: white;padding-right:8%;font-family: 'Cabin', sans-serif;padding-top:10%;text-transform:uppercase;">
- 		Get up earlier-Stay Longer <br>Work Harder <br>Fail-Fail again <br><span style="background-color:#00818a;font-weight:bold;">Never ever Quit</span>
+ 		Get up earlier<br>Stay Longer <br>Work Harder <br>Fail-Fail again <br><span style="background-color:#00818a;font-weight:bold;">Never ever Quit</span>
  	</p>
  	</div>
  <!------main page -------> 
@@ -176,7 +189,7 @@
 	<div class="container">
 		<div class="row justify-content-center" style="height:auto;">
 			<div class="col-md-7 col-sm-12">
-				<div class="card" style="margin-top:15%;box-shadow: -1px 4px 46px -4px rgba(0,0,0,0.75);" id="card-main">
+				<div class="card" style="margin-top:15%;box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);" id="card-main">
 					<div class="card-body">
 						<div class="card-title d-flex align-items-center" id="cams-head">
 							<img src="img/rsz_download.jpg">
@@ -197,7 +210,7 @@
 				</div>
 			</div>
 			<div class="col-md-7 col-sm-12" style="margin-bottom: 5%;">
-				<div class="card" style="margin-top:10%;box-shadow: -1px 4px 46px -4px rgba(0,0,0,0.75);" id="card-main">
+				<div class="card" style="margin-top:10%;box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);" id="card-main">
 					<div class="card-body">
 						<div class="card-title d-flex align-items-center" id="cams-head">
 							<img src="img/Novac.jpg">
@@ -228,7 +241,7 @@
  	 <div class="container" style="background-color:">
  	 	<div class="row d-flex justify-content-center" style="margin-top:5%;">
  	 		<div class="col-md-4">
- 	 			<div class="card" id="project1-primary" style="box-shadow: -1px 4px 46px -4px rgba(0,0,0,0.75);border-radius:15px;height:350px;" >
+ 	 			<div class="card" id="project1-primary" style="box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;height:350px;" >
  	 			<img src="img/img.jpg" class="card-img card-img-top"> 	 			
  	 			<p class="card-title d-flex justify-content-between align-items-center" style="font-weight:lighter;color:#003f5c;cursor:pointer;padding-left:5%;font-size:28px;" id="btn-click1-primary">Weather Forcast <span class="material-icons" style="margin-right:5%;">subject</span>
  	 			</p>
@@ -237,7 +250,7 @@
  	 			</div> 	 			
  	 			</div>
 
- 	 			<div class="card" style="height:350px;box-shadow: -1px 4px 46px -4px rgba(0,0,0,0.75);padding:5%;border-radius:15px;" id="project1-secoundary">
+ 	 			<div class="card" style="height:350px;box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);padding:5%;border-radius:15px;" id="project1-secoundary">
  	               <div class="d-flex  align-items-center" style="justify-content:space-between;height:20px;">
  	               	<p class="card-title" style="font-weight:bold;color:#003f5c;cursor:pointer;margin-top:5%;font-size:20px;">Accomplishments	               	
  	 				</p>
@@ -257,7 +270,7 @@
  	 			</div>
  	 		</div>
  	 		<div class="col-md-4 col-sm-12 offset-md-1"  >
- 	 			<div class="card" id="project2-primary" style="box-shadow: -1px 4px 46px -4px rgba(0,0,0,0.75);border-radius:15px;height:350px;" >
+ 	 			<div class="card" id="project2-primary" style="box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;height:350px;" >
  	 			<img src="img/img.jpg" class="card-img card-img-top"> 	 			
  	 			<p class="card-title d-flex justify-content-between align-items-center" style="font-weight:lighter;color:#003f5c;cursor:pointer;padding-left:5%;font-size:28px;" id="btn-click2-primary">Let's Learn<span class="material-icons" style="margin-right:5%;">subject</span>
  	 			</p>
@@ -265,7 +278,7 @@
  	 				<p style="color:#7c0a02;font-weight:200;font-family: 'Raleway', sans-serif;">Online Forum where we post coding language doubts and querys built with Asp.net</p>
  	 			</div> 	 			
  	 			</div>
- 	 			<div class="card" style="height:350px;box-shadow: -1px 4px 46px -4px rgba(0,0,0,0.75);padding:5%;border-radius:15px;" id="project2-secoundary">
+ 	 			<div class="card" style="height:350px;box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);padding:5%;border-radius:15px;" id="project2-secoundary">
  	               <div class="d-flex  align-items-center" style="justify-content:space-between;height:20px;">
  	               	<p class="card-title" style="font-weight:bold;color:#003f5c;cursor:pointer;margin-top:5%;font-size:20px;">Accomplishments	               	
  	 				</p>
@@ -285,7 +298,7 @@
  	 			</div>
  	 		</div> 	 		
  	 		<div class="col-md-4 col-sm-12" style="margin-top:5%; margin-bottom:10%;">
- 	 			<div class="card" id="project3-primary" style="box-shadow: -1px 4px 46px -4px rgba(0,0,0,0.75);border-radius:15px;height:350px;" >
+ 	 			<div class="card" id="project3-primary" style="box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;height:350px;" >
  	 			<img src="img/img.jpg" class="card-img card-img-top"> 	 			
  	 			<p class="card-title d-flex justify-content-between align-items-center" style="font-weight:300;color:#003f5c;cursor:pointer;padding-left:5%;font-size:20px;" id="btn-click3-primary">Window Service Monitoring Tool <span class="material-icons" style="margin-right:5%;">subject</span>
  	 			</p>
@@ -293,7 +306,7 @@
  	 				<p style="color:#7c0a02;font-weight:200;font-family: 'Raleway', sans-serif;">Tool Used to Monitor all the window service of diffrent servers</p>
  	 			</div> 	 			
  	 			</div>
- 	 			<div class="card" style="height:350px;box-shadow: -1px 4px 46px -4px rgba(0,0,0,0.75);padding:5%;border-radius:15px;" id="project3-secoundary">
+ 	 			<div class="card" style="height:350px;box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);padding:5%;border-radius:15px;" id="project3-secoundary">
  	               <div class="d-flex  align-items-center" style="justify-content:space-between;height:20px;">
  	               	<p class="card-title" style="font-weight:bold;color:#003f5c;cursor:pointer;margin-top:5%;font-size:20px;">Accomplishments	               	
  	 				</p>
@@ -321,44 +334,65 @@
  	 <div class="container">
  	 	<div class="row" style="margin-bottom:5%;">
  	 		<div class="col-md-12 col-sm-12"> 	 			
- 	 			<div class="card text-left" style="width:80%;height:100px;display:block;padding:20px;margin-top:5%;box-shadow: -1px 4px 46px -4px rgba(0,0,0,0.75);border-radius:15px;" id="skills-content"> 	 			    
+ 	 			<div class="card text-left" style="width:80%;height:auto;display:block;padding:20px;margin-top:5%;box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;" id="skills-content"> 	 			    
  	 				<img src="img/icons8-c-sharp-logo-2-96.png" data-toggle="tooltip" data-placement="top" title="C#" id='img-skills'>
  	 				<img src="img/icons8-sql-100.png" data-toggle="tooltip" data-placement="top" title="Sql" id='img-skills'>
  	 				<img src="img/icons8-powershell-96.png" data-toggle="tooltip" data-placement="top" title="Powershell" id='img-skills'>
  	 				<img src="img/icons8-java-96.png" data-toggle="tooltip" data-placement="top" title="Java" id='img-skills'>
  	 			</div>
- 	 			<div class="card text-left" style="width:80%;height:100px;display:block;padding:20px;margin-top:5%;box-shadow: -1px 4px 46px -4px rgba(0,0,0,0.75);border-radius:15px;" id="skills-content">
+ 	 			<div class="card text-left" style="width:80%;height:auto;display:block;padding:20px;margin-top:5%;box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;" id="skills-content">
  	 				<img src="img/icons8-html-5-96.png" data-toggle="tooltip" data-placement="top" title="HTML" id='img-skills'>
  	 				<img src="img/icons8-css-filetype-96.png" data-toggle="tooltip" data-placement="top" title="CSS" id='img-skills'>
  	 				<img src="img/icons8-bootstrap-96.png" data-toggle="tooltip" data-placement="top" title="Bootstrap" id='img-skills'> 
- 	 				<img src="img/icons8-javascript-96.png" data-toggle="tooltip" data-placement="top" title="Javascript" id='img-skills'>				
+ 	 				<img src="img/icons8-javascript-96.png" data-toggle="tooltip" data-placement="top" title="Javascript" id='img-skills'>
+ 	 				<img src="img/materialize.png" data-toggle="tooltip" data-placement="top" title="Materialize" id='img-skills'>					
  	 			</div>
  	 		</div>
  	 	</div>
  	 </div>
 </section> 
-
-
 <section class="Contact" id="Contact">
  	 <p id="about-heading" style="background-color:#00818a;color:white;padding-left:35px;font-family: 'Open Sans Condensed', sans-serif;, sans-serif;;height:120px;font-size:50px;font-weight:lighter;box-shadow: 0px 3px 82px -44px rgba(0,0,0,0.9);;padding-top:20px;font-weight:100;word-spacing:1em;">CONTACT</p>
       <div class="container">
-      	<div class="row">
+      	<div class="row" style="margin-bottom:5%;" >
       		<div class="col-md-4 text-center" style="padding:15px;margin-top:5%;">
       			<div class="d-flex align-items-center justify-content-center" style="cursor:pointer;">
-      				<img src="img/icons8-new-message-40.png" style="margin-right:5%;">
-      				<a style="color:#84253e;font-weight:600;" href="gmail.com" target="_blank" data-toggle="tooltip" data-placement="top" title="vijayrocky648@gmail.com">Gmail</a>
+      				<img src="img/icons8-new-message-40.png" style="height:40px;width:40px;" data-toggle="tooltip" data-placement="top" title="Ping Vijay on Gmail">
+      				<a style="color:#84253e;font-weight:600;margin-left:5%;" href="gmail.com" target="_blank" >Gmail</a>
       			</div>
       			<div class="d-flex align-items-center justify-content-center" style="cursor:pointer;margin-top:5%;">
-      				<img src="img/482877505.jpg" style="margin-right:5%;height:40px;width:40px;">
-      				<a style="color:#84253e;font-weight:600;" href="https://www.naukri.com/mnjuser/homepage" target="_blank">Naukri</a>
+      				<img src="img/482877505.jpg" style="height:40px;width:40px;" data-toggle="tooltip" data-placement="top" title="View Vijay on Naukri">
+      				<a style="color:#84253e;font-weight:600;margin-left:5%;" href="https://www.naukri.com/mnjuser/homepage" target="_blank" href="gmail.com" target="_blank">Naukri</a>
       			</div>
       			<div class="d-flex align-items-center justify-content-center" style="cursor:pointer;margin-top:5%;">
-      				<img src="https://img.icons8.com/office/40/000000/linkedin.png" style="margin-right:5%;height:40px;width:40px;">
-      				<a style="color:#84253e;font-weight:600;" href="https://www.naukri.com/mnjuser/homepage" target="_blank">LinkedIn</a>
+      				<img src="https://img.icons8.com/office/40/000000/linkedin.png" style="height:40px;width:40px;" data-toggle="tooltip" data-placement="top" title="View Vijay on LinkedIn">
+      				<a style="color:#84253e;font-weight:600;margin-left:4%;" href="https://www.naukri.com/mnjuser/homepage" target="_blank">LinkedIn</a>
       			</div>
       		</div>
       	</div>
       </div>
+</section>
+<section class="Education" id="Education">
+ 	 <p id="about-heading" style="background-color:#00818a;color:white;padding-left:35px;font-family: 'Open Sans Condensed', sans-serif;, sans-serif;;height:120px;font-size:50px;font-weight:lighter;box-shadow: 0px 3px 82px -44px rgba(0,0,0,0.9);;padding-top:20px;font-weight:100;word-spacing:1em;">EDUCATION</p>
+ 	 <div class="container">
+ 	 	<div class="row d-flex justify-content-center" style="margin:5% 0% 5% 0%;">
+ 	 		<div class="col-md-5" >
+ 	 			<div class="card" style="padding:10px 20px 0px 20px;box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;" id="education-content">
+ 	 				<div class="card-title">
+ 	 				<a href="http://gurunanakcollege.edu.in/" target="_blank"><h3 style="color:#7c0a02;font-weight:bold;font-family: 'Raleway', sans-serif;margin-bottom:0px;cursor:pointer;">Guru Nanak College (2014-2017)</h3></a>
+ 	 				<h4 style="color:#7c0a02;font-weight:100;font-family: 'Raleway', sans-serif;">Velechery,Chennai</h4>
+ 	 				</div>
+ 	 				<hr style="border-bottom:1px solid black">
+ 	 				<div class="card-body">
+ 	 					<ul style="color:#7c0a02;font-weight:bold;font-family: 'Raleway', sans-serif;font-size:15px;color:#347474;">
+ 	 						<li>B.SC(Computer Science)</li>
+ 	 					</ul>
+ 	 				</div>
+ 	 			</div>
+ 	 		</div>
+ 	 	</div>
+ 	 </div> 
+</section>  
  </div>
 </div>
 <!--Content--->
@@ -407,12 +441,7 @@ $(document).ready(function() {
    $('.cams-head').addClass('justify-content-center')
   }
  });
-}); 
- $('ul li').mouseenter(function(event) {
- 	$(this).find('img').addClass('animated jello')
- }).mouseleave(function(event) {
- 	$(this).find('img').removeClass('animated jello')
- });
+});
  $(document).ready(function(event) {
  	$('.main-head').find('p').addClass('animated lightSpeedIn')
  });
@@ -478,14 +507,41 @@ $('#btn-click4-secoundary').click(function(event) {
 $('[data-toggle="tooltip"]').tooltip();
 $('#skills-content  img').hover(function() {
 	/* Stuff to do when the mouse enters the element */
-	$(this).addClass('animated jello')
-	$(this).css({
-		'box-shadow':'10px 7px 112px -50px rgba(0,0,0,0.75)',		
-	});
+	$(this).addClass('animated jello');	
 }, function() {
 	/* Stuff to do when the mouse leaves the element */
 	$(this).removeClass('animated jello')
 });
+
+$('.sidenav-simple li').mouseenter(function(event) {
+	console.log((Math.round((Math.random() * 999) +1)));
+	var color_main=(Math.round((Math.random() * 999) +1));
+	var color = Math.round((Math.random() * 98) + 1);
+	var color2 = Math.round((Math.random() * 98) + 1);
+	console.log('solid 3px rbh('+color_main+','+color+','+color2+')');
+ 	$(this).find('img').addClass('animated jello');
+ 	$(this).css({
+ 		'border-left': 'solid 4px rgb('+color_main+','+color+','+color2+')',
+ 		'background-color':'#eeeeee'		
+ 	}); 	
+ 	$(this).find('span').css({
+ 		'font-weight': '600' 		
+ 	});
+
+ }).mouseleave(function(event) {
+ 	$(this).find('img').removeClass('animated jello');
+ 	$(this).css({
+ 		'border-left': '0px' 		
+ 	});
+ 	$(this).find('span').css({
+ 		'font-weight': '400' 		
+ 	});
+ 	$(this).css({ 		
+ 		'background':'none'		
+ 	});
+
+ });
 </script>
 <script src="https://use.fontawesome.com/f55622d881.js"></script>
 </html>
+	
