@@ -110,6 +110,14 @@
     .subject > ul >li{
     	font-family: 'Montserrat', sans-serif;
     	
+    }
+    #card-main > div >h3{
+    	text-transform:uppercase;
+    	font-family:'Nanum Gothic',sans-serif;
+    	margin-left:10%;
+    	font-size:26px;
+    	font-weight:bold;
+    	color:#003f5c
     }   
     </style>
 </head>
@@ -220,6 +228,7 @@
 							<p style="font-family: 'Nanum Gothic', sans-serif;margin-left:15%;font-size:15px;font-weight:bold;color:#5b0909;"id="remove-des">Assitant Processing Officer</p>
 						</div>
 						<hr style="border-top:.05px solid gray;">
+						<h3 style="text-align: center;margin:0">Cams</h3>
 						<div class="card-body">							
 							<h4 style="color:#5b0909">About Company</h4>
 							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">Computer Age Management Services (CAMS) is a Mutual Fund Transfer Agency to the Indian Asset Management Companies with a share of 65% of the assets under management (AuM). The company was incorporated in year 1988.</p>
@@ -241,7 +250,8 @@
 							<p style="font-family: 'Nanum Gothic', sans-serif;margin-left:15%;font-size:15px;font-weight:bold;color:#5b0909;"id="remove-des">Software Engineer</p>
 						</div>
 						<hr style="border-top:.05px solid gray;">
-						<div class="card-body">							
+						<h3 style="text-align: center;margin:0;">Novac</h3>
+						<div class="card-body">							    					
 							<h4 style="color:#5b0909">About Company</h4>
 							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">NOVAC is a CMMI Level 5 Certified IT & ITES arm of Shriram Group with a strong technology and domain expertise in Financial Services, Insurance and E-commerce industries, with a proven track record of delivering high quality business solutions.</p>
 							<h5 style="color:#5b0909">Software Engineer</h5>
@@ -264,7 +274,7 @@
  	 <div class="container" style="background-color:">
  	 	<div class="row d-flex justify-content-center" style="margin-top:5%;">
  	 		<div class="col-md-4">
- 	 			<div class="card" id="project1-primary" style="box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;height:350px;" >
+ 	 			<div class="card" id="project1-primary" style="box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;height:auto;" >
  	 			<img src="img/img.jpg" class="card-img card-img-top"> 	 			
  	 			<p class="card-title d-flex justify-content-between align-items-center" style="font-weight:lighter;color:#003f5c;cursor:pointer;padding-left:5%;font-size:28px;" id="btn-click1-primary">Weather Forcast <span class="material-icons" style="margin-right:5%;">subject</span>
  	 			</p>
@@ -293,7 +303,7 @@
  	 			</div>
  	 		</div>
  	 		<div class="col-md-4 col-sm-12 offset-md-1"  >
- 	 			<div class="card" id="project2-primary" style="box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;height:350px;" >
+ 	 			<div class="card" id="project2-primary" style="box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;height:auto;" >
  	 			<img src="img/img.jpg" class="card-img card-img-top"> 	 			
  	 			<p class="card-title d-flex justify-content-between align-items-center" style="font-weight:lighter;color:#003f5c;cursor:pointer;padding-left:5%;font-size:28px;" id="btn-click2-primary">Let's Learn<span class="material-icons" style="margin-right:5%;">subject</span>
  	 			</p>
@@ -321,7 +331,7 @@
  	 			</div>
  	 		</div> 	 		
  	 		<div class="col-md-4 col-sm-12" style="margin-top:5%; margin-bottom:10%;">
- 	 			<div class="card" id="project3-primary" style="box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;height:350px;" >
+ 	 			<div class="card" id="project3-primary" style="box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;height:auto;" >
  	 			<img src="img/img.jpg" class="card-img card-img-top"> 	 			
  	 			<p class="card-title d-flex justify-content-between align-items-center" style="font-weight:300;color:#003f5c;cursor:pointer;padding-left:5%;font-size:20px;" id="btn-click3-primary">Window Service Monitoring Tool <span class="material-icons" style="margin-right:5%;">subject</span>
  	 			</p>
@@ -437,6 +447,9 @@ $(document).ready(function() {
  	}); */
   $('.side-bar').removeClass('hide');
    $('.side-bar').addClass('unhide');
+   $('#card-main div h3').css({
+    	display: 'none'    	
+    });
   }else{
   	$('#custom-head').css({
      	'display': 'block',     	
@@ -448,6 +461,9 @@ $(document).ready(function() {
     $('.cams-head').addClass('justify-content-center');
     $('.side-bar').removeClass('unhide');
     $('.side-bar').addClass('hide');
+    $('#card-main div h3').css({
+    	display: 'block'    	
+    });
   } 
 
  $(window).resize(function(event) {
@@ -461,7 +477,10 @@ $(document).ready(function() {
   		'height': '800px',  		
   	});
      $('.side-bar').removeClass('hide');
-  	$('.side-bar').addClass('unhide');     
+  	$('.side-bar').addClass('unhide'); 
+  	$('#card-main div h3').css({
+    	display: 'none'    	
+    });    
   }else{
   	$('#custom-head').css({
      	'display': 'block'     	    	
@@ -471,7 +490,10 @@ $(document).ready(function() {
   	});
    $('.cams-head').addClass('justify-content-center');
    $('.side-bar').removeClass('unhide');
-   $('.side-bar').addClass('hide');   
+   $('.side-bar').addClass('hide');
+   $('#card-main div h3').css({
+    	display: 'block'    	
+    });   
   }
  });
 });
