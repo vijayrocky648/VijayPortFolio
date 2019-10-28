@@ -103,7 +103,10 @@
     }
     .unhide{
     	display:block;
-    }             
+    }
+    ul{
+    	list-style-position:outside;
+    }           
     </style>
 </head>
 <body style="background:url('img/bg.png') repeat;">
@@ -152,7 +155,11 @@
 <!--Content--->
 <div class="container-fluid" style="padding-left:0px;">
 <!---Header Part--->
- <div class="custom-head" style="background-color:#f4f3f3;border-bottom:1px solid gray" id='custom-head'>        
+
+ <!---Header Part--->
+ <!------main page -------> 
+ <div id ="right" style="height:100vh;">
+ 	 <div class="custom-head" style="background-color:#f4f3f3;border-bottom:1px solid grayp;position:sticky;top:0;z-index:1" id='custom-head'>        
  	<div class="d-flex justify-content-center">
  		<i class="material-icons align-self-center" style="position:absolute;left:0px;font-size:50px;cursor:pointer" id="click-nav">list</i>
  		<div style="margin-bottom:1%;">
@@ -161,9 +168,6 @@
  		</div>
  	</div>
  </div>
- <!---Header Part--->
- <!------main page -------> 
- <div id ="right" style="height:100vh;">
  	 <div style="height:800px;background-image:url('img/bg_head.jpg');background-size:cover;" class="main-head">
  	<p class="display-4 text-right" style="color: white;padding-right:8%;font-family: 'Cabin', sans-serif;padding-top:10%;text-transform:uppercase;">
  		Get up earlier<br>Stay Longer <br>Work Harder <br>Fail-Fail again <br><span style="background-color:#00818a;font-weight:bold;">Never ever Quit</span>
