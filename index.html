@@ -45,7 +45,7 @@
         }
         .main-head{
         	height:400px;
-        }     
+        }        
 	 }   
     .about{
     	height:auto;
@@ -102,7 +102,7 @@
     	display:none;
     }
     .unhide{
-    	display:block;
+    	display:block;    	
     }
     ul{
     	list-style-position:outside;
@@ -161,7 +161,7 @@
  <div id ="right" style="height:100vh;">
  	 <div class="custom-head" style="background-color:#f4f3f3;border-bottom:1px solid grayp;position:sticky;top:0;z-index:1" id='custom-head'>        
  	<div class="d-flex justify-content-center">
- 		<i class="material-icons align-self-center" style="position:absolute;left:0px;font-size:50px;cursor:pointer" id="click-nav">list</i>
+ 		<i class="material-icons align-self-center" style="position:absolute;left:0px;font-size:50px;cursor:pointer" id="click-nav">subject</i>
  		<div style="margin-bottom:1%;">
  			<h5 style="height:50px;font-size:38px;font-family: 'Montserrat', sans-serif;color:#7c0a02;text-align:center;margin:0;padding:0">Vijay</h5>
  			<h5 style="color:#347474;font-weight:100;text-align:center;margin:0;padding:0">Software Engineer</h5>
@@ -431,7 +431,8 @@ $(document).ready(function() {
      /*$('.side-bar').css({
  		'display':'block'		
  	}); */
-   $('.side-bar').addClass('unhide')
+  $('.side-bar').removeClass('hide');
+   $('.side-bar').addClass('unhide');
   }else{
   	$('#custom-head').css({
      	'display': 'block',     	
@@ -440,7 +441,9 @@ $(document).ready(function() {
   	$('.main-head').css({
   		'height': '400px',  		
   	});
-    $('.cams-head').addClass('justify-content-center')
+    $('.cams-head').addClass('justify-content-center');
+    $('.side-bar').removeClass('unhide');
+    $('.side-bar').addClass('hide');
   } 
 
  $(window).resize(function(event) {
@@ -453,7 +456,8 @@ $(document).ready(function() {
      $('.main-head').css({
   		'height': '800px',  		
   	});
-     $('.side-bar').addClass('unhide')
+     $('.side-bar').removeClass('hide');
+  	$('.side-bar').addClass('unhide');     
   }else{
   	$('#custom-head').css({
      	'display': 'block'     	    	
@@ -461,7 +465,9 @@ $(document).ready(function() {
   	$('.main-head').css({
   		'height': '400px',  		
   	});
-   $('.cams-head').addClass('justify-content-center')
+   $('.cams-head').addClass('justify-content-center');
+   $('.side-bar').removeClass('unhide');
+   $('.side-bar').addClass('hide');   
   }
  });
 });
@@ -571,7 +577,7 @@ $('.sidenav-simple li').mouseenter(function(event) {
  			$('.side-bar').removeClass('hide');
  			$('.side-bar').addClass('unhide');
  		}else{
- 		  $('.side-bar').removeClass('unhide');
+ 		  $('.side-bar').removeClass('unhide'); 		  
            $('.side-bar').addClass('hide');
  		}
  		
