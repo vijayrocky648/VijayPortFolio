@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/metro-all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300|Raleway&display=swap" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300|Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/398029acc8.js" crossorigin="anonymous"></script>
+
     <style>    	
 	 @media screen and  (max-width:1320px){
         .title-custom{
@@ -45,8 +47,8 @@
         }
         .main-head{
         	height:400px;
-        }        
-	 }   
+        }               
+	 } 
     .about{
     	height:auto;
     }
@@ -92,6 +94,22 @@
            	font-size:15px;
            }
     }
+    @media screen and (min-width:1320px){
+
+    	#current-tech{
+        	font-weight:bold;
+        	font-family: 'Nanum Gothic', sans-serif;
+        	font-size:20px;
+        	text-transform:uppercase;
+        	margin-bottom:2%;
+        	color:#5ea3a3;
+
+        } 
+        #current-tech > span{
+        	font-size:25px;
+        	color:#841818;
+        }
+    }
     .card-title a:hover{
     	text-decoration:underline #7c0a02;
     }
@@ -106,57 +124,49 @@
     }
     ul{
     	list-style-position:outside;
-    }        
-    .subject > ul >li{
-    	font-family: 'Montserrat', sans-serif;
-    	
-    }
-    #card-main > div >h3{
-    	text-transform:uppercase;
-    	font-family:'Nanum Gothic',sans-serif;
-    	margin-left:10%;
-    	font-size:26px;
-    	font-weight:bold;
-    	color:#003f5c
     }   
+    .sidenav-simple  li  span  i{
+    	font-size:20px;
+    }   
+    
+
     </style>
 </head>
 <body style="background:url('img/bg.png') repeat;">
 <div class="d-flex" id ="left">
-<div  class="side-bar" style="background-color:#fafafa;box-shadow: 2px 2px 14px -3px #000000;border-right:1px solid gray;">
+<div  class="side-bar" style="background-color:#fdfdfd;box-shadow: 2px 2px 14px -3px #000000;border-right:1px solid gray;">
 <ul class="sidenav-simple sidenav-simple-expand-sm  h-auto"  style="margin:0px;padding:0px;background:none;">
 	<div class="title-custom text-center" style="height:auto;border-bottom:solid 0.01em gray">
 		<img src="img/WIN_0248.jpg" style="height:60px;width:60px;border-radius:50%;margin-top:2%;">
 		<h4 style="font-size:28px;text-align:center;color:#207561;font-weight:400;">Vijay</h4>
 		<h4 style="font-size:15px;text-align:center;font-weight:200;">Software Engineer</h4>
 	</div>
-	<li style="margin-top:5%;"><a href="#about">
-		<i class="fas fa-user-alt"></i>
-        <span class="icon"><img src="img/icons8-about-48.png" style="height:30px;width:30px;"></span>
+	<li style="margin-top:5%;"><a href="#about">		
+        <span class="icon"><i class="fas fa-user-alt" style="color:#1f6650;"></i></span>
         <span class="title">About</span>
     </a></li>
     <li><a href="#Experience">
-        <span class="icon"><img src="img/icons8-graph-100.png" style="height:30px;width:30px;"></span>
+        <span class="icon"><i class="fas fa-chart-line" style="color:#c70039;"></i></span>
         <span class="title">Experience</span>
     </a></li>
     <li><a href="#Projects">
-        <span class="icon"><img src="img/icons8-microsoft-project-48.png" style="height:30px;width:30px;"></span>
+        <span class="icon"><i class="fas fa-chart-pie" style="color:#44000d;"></i></span>
         <span class="title">Projects</span>
     </a></li>
     <li><a href="#Skills">    	
-        <span class="icon"><img src="img/icons8-communication-skill-64.png" style="height:30px;width:30px;"></span>
+        <span class="icon"><i class="fas fa-file" style="color:#022c43;"></i></span>
         <span class="title">Skills</span>
     </a></li>
      <li><a href="#Contact">    	
-        <span class="icon"><img src="img/icons8-contact-30.png" style="height:30px;width:30px;"></span>
+        <span class="icon"><i class="fas fa-id-card" style="color:#352f44;"></i></span>
         <span class="title">Contact</span>
     </a></li>
      <li><a href="#Education">    	
-        <span class="icon"><img src="https://img.icons8.com/cotton/50/000000/motarboard.png" style="height:30px;width:30px;"></span>
+        <span class="icon"><i class="fas fa-university" style="color:#88304e;"></i></span>
         <span class="title">Education</span>
     </a></li>
     <li><a href="#">    	
-        <span class="icon"><img src="https://img.icons8.com/color/48/000000/resume.png" style="height:30px;width:30px;"></span>
+        <span class="icon"><i class="fas fa-cloud-download-alt" style="color:#e84a5f;"></i></span>
         <span class="title">Resume</span>
     </a></li>    
 </ul>
@@ -205,7 +215,8 @@
      	<p>
      	As a Software Engineer, I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world. That's why I’m excited to make a big impact at a high growth company.
         </p><br>
-        <label style="font-weight:bold;font-family: 'Nanum Gothic', sans-serif;font-size:25px;margin-bottom:5%;">Current Focus- <span style="color:#7c0a02;font-size:20	px;font-weight:lighter;cursor:pointer;">Python</span></label>      
+       <!-- <label style="font-weight:bold;font-family: 'Nanum Gothic', sans-serif;font-size:25px;margin-bottom:5%;">Current Focus- <span style="color:#7c0a02;font-size:20	px;font-weight:lighter;cursor:pointer;">Python</span></label>-->    
+       <label id="current-tech">Current Focus- <span>Python</span></label>  
      </div>
   <!-----about-content---->
 </section>
@@ -572,11 +583,12 @@ $('.sidenav-simple li').mouseenter(function(event) {
 	console.log((Math.round((Math.random() * 999) +1)));
 	var color_main=(Math.round((Math.random() * 999) +1));
 	var color = Math.round((Math.random() * 98) + 1);
-	var color2 = Math.round((Math.random() * 98) + 1);
-	console.log('solid 3px rbh('+color_main+','+color+','+color2+')');
- 	$(this).find('img').addClass('animated jello');
+	var color2 = Math.round((Math.random() * 98) + 1);			
+	var color5 = $(this).find('i').css("color");
+	console.log('solid 3px '+color5);
+ 	$(this).find('i').addClass('animated jello');
  	$(this).css({
- 		'border-left': 'solid 4px rgb('+color_main+','+color+','+color2+')',
+ 		'border-left': 'solid 4px '+color5,
  		'background-color':'#eeeeee'		
  	}); 	
  	$(this).find('span').css({
@@ -584,7 +596,7 @@ $('.sidenav-simple li').mouseenter(function(event) {
  	});
 
  }).mouseleave(function(event) {
- 	$(this).find('img').removeClass('animated jello');
+ 	$(this).find('i').removeClass('animated jello');
  	$(this).css({
  		'border-left': '0px' 		
  	});
