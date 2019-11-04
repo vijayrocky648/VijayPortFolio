@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans+Condensed:300|Raleway&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/398029acc8.js" crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
     <style>    	
 	 @media screen and  (max-width:1320px){
         .title-custom{
@@ -60,6 +60,13 @@
         #current-tech  span{
         	font-size:18px;
         	color:#841818;
+        }
+        footer{
+        	background-color:white;
+        	box-shadow: 2px 2px 14px -3px #000000;
+        	text-align:center;
+        	font-family: 'Heebo', sans-serif;
+        	font-weight:bold;
         }               
 	 } 
     .about{
@@ -94,7 +101,7 @@
             margin-left:2%;
            }
     }   
-    @media screen and (max-width:400px){
+    @media screen and (max-width:600px){
            #skills-content img{
            	height:40px;
             width: 40px;
@@ -122,6 +129,13 @@
         	font-size:25px;
         	color:#841818;
         }
+        footer{
+        	background-color:white;
+        	box-shadow: 2px 2px 14px -3px #000000;
+        	text-align:center;
+        	font-family: 'Heebo', sans-serif;
+        	font-weight:bold;
+        }
     }
     .card-title a:hover{
     	text-decoration:underline #7c0a02;
@@ -140,8 +154,16 @@
     }   
     .sidenav-simple  li  span  i{
     	font-size:20px;
-    }   
-    
+    }
+    #working-points{
+    	font-family: 'Heebo', sans-serif;
+    	font-weight:bold;    	
+    }
+    #links div i{
+    	font-size:30px;
+    	color:#745c97;   	
+    }
+
 
     </style>
 </head>
@@ -178,7 +200,7 @@
         <span class="icon"><i class="fas fa-university" style="color:#88304e;"></i></span>
         <span class="title">Education</span>
     </a></li>
-    <li><a href="#">    	
+    <li><a href="js\Resume_Vijay.docx">    	
         <span class="icon"><i class="fas fa-cloud-download-alt" style="color:#e84a5f;"></i></span>
         <span class="title">Resume</span>
     </a></li>    
@@ -257,7 +279,12 @@
 							<h4 style="color:#5b0909">About Company</h4>
 							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">Computer Age Management Services (CAMS) is a Mutual Fund Transfer Agency to the Indian Asset Management Companies with a share of 65% of the assets under management (AuM). The company was incorporated in year 1988.</p>
 							<h5 style="color:#5b0909">Assistant Processing Officer</h5>
-							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">Processing Day to Day Mutual Fund Application into the DataBase and Taking Care of Customer Query</p>
+							<ul id="working-points">
+								<li>Handling the day to day creation units as result of Purchase, Redemption, Switch-in, Switch-out Transfer in and Transfer out transaction which are transacted by the investor on day to day basis and thereby arriving at the unit capital of fund/scheme for the day.</li>
+								<li>NAV applied to purchase/Redemption/Switch application/request depending upon the date and time of receipt of the same. Cutoff time as prescribed by SEBI guileless</li>
+								<li>Co-ordination with the AMC team and other internal team and external team for hassle-free completion of process.</li>
+								<li>Keep accurate records and documents pertaining to the area of operation.</li>
+							</ul>
 						</div>
 						<div class="card-footer">
 							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">2017-2018 Nugambakkam,Chennai</p>
@@ -279,7 +306,12 @@
 							<h4 style="color:#5b0909">About Company</h4>
 							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">NOVAC is a CMMI Level 5 Certified IT & ITES arm of Shriram Group with a strong technology and domain expertise in Financial Services, Insurance and E-commerce industries, with a proven track record of delivering high quality business solutions.</p>
 							<h5 style="color:#5b0909">Software Engineer</h5>
-							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">Creating Application Based on the Client Request and Providing Support to the Client</p>
+							<ul id="working-points">
+								<li>Successfully generated back-end programming C#, CSS, JavaScript/Jquery, and MySQL frameworks</li>
+								<li>Generate Automation Reports using C# based on the Client Request</li>
+								<li>Implemented new C# class library for the SQL server database access layer, and updated Previous web page frameworks</li>
+								<li>Provided support on Live Application  issues, client and staff logins, and general upgrades/maintenance of servers</li>
+							</ul>
 						</div>
 						<div class="card-footer">
 							<p style="font-family: 'Nanum Gothic', sans-serif;font-weight:800">2018-Present Myplapore,Chennai</p>
@@ -303,7 +335,7 @@
  	 			<p class="card-title d-flex justify-content-between align-items-center" style="font-weight:lighter;color:#003f5c;cursor:pointer;padding-left:5%;font-size:28px;" id="btn-click1-primary">Weather Forcast <span class="material-icons" style="margin-right:5%;">subject</span>
  	 			</p>
  	 			<div class="card-body">
- 	 				<p style="color:#7c0a02;font-weight:200;font-family: 'Raleway', sans-serif;">Experimental Asp.Net WebApplication used to see weather report on daily basis</p>
+ 	 				<p style="color:#7c0a02;font-weight:200;font-family: 'Raleway', sans-serif;">Experimental WebSite used to see weather report on daily basis</p>
  	 			</div> 	 			
  	 			</div>
 
@@ -356,7 +388,7 @@
  	 		</div> 	 		
  	 		<div class="col-md-4 col-sm-12" style="margin-top:5%; margin-bottom:10%;">
  	 			<div class="card" id="project3-primary" style="box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;height:auto;" >
- 	 			<img src="img/img.jpg" class="card-img card-img-top"> 	 			
+ 	 			<img src="img/dash.png" class="card-img card-img-top"> 	 			
  	 			<p class="card-title d-flex justify-content-between align-items-center" style="font-weight:300;color:#003f5c;cursor:pointer;padding-left:5%;font-size:20px;" id="btn-click3-primary">Window Service Monitoring Tool <span class="material-icons" style="margin-right:5%;">subject</span>
  	 			</p>
  	 			<div class="card-body">
@@ -412,18 +444,18 @@
  	 <p id="about-heading" style="background-color:#00818a;color:white;padding-left:35px;font-family: 'Open Sans Condensed', sans-serif;, sans-serif;;height:120px;font-size:50px;font-weight:lighter;box-shadow: 0px 3px 82px -44px rgba(0,0,0,0.9);;padding-top:20px;font-weight:100;word-spacing:1em;">CONTACT</p>
       <div class="container">
       	<div class="row" style="margin-bottom:5%;" >
-      		<div class="col-md-4 text-center" style="padding:15px;margin-top:5%;">
-      			<div class="d-flex align-items-center justify-content-center" style="cursor:pointer;">
-      				<img src="img/icons8-new-message-40.png" style="height:40px;width:40px;" data-toggle="tooltip" data-placement="top" title="Ping Vijay on Gmail">
-      				<a style="color:#84253e;font-weight:600;margin-left:5%;" href="gmail.com" target="_blank" >Gmail</a>
+      		<div class="col-md-4 text-center" style="padding:15px;margin-top:5%;" id="links">
+      			<div class="d-flex align-items-center justify-content-center" style="cursor:pointer;" >
+      				<i class="fas fa-envelope" data-toggle="tooltip" data-placement="top" title="Ping Vijay on Gmail"></i>
+      				<a style="color:#84253e;font-weight:600;margin-left:5%;" href="mailto:vijayrocky648@gmail.com" target="_blank" >Gmail</a>
       			</div>
       			<div class="d-flex align-items-center justify-content-center" style="cursor:pointer;margin-top:5%;">
-      				<img src="img/482877505.jpg" style="height:40px;width:40px;" data-toggle="tooltip" data-placement="top" title="View Vijay on Naukri">
-      				<a style="color:#84253e;font-weight:600;margin-left:5%;" href="https://www.naukri.com/mnjuser/homepage" target="_blank" href="gmail.com" target="_blank">Naukri</a>
+      				<i class="fab fa-github" data-toggle="tooltip" data-placement="top" title="View Vijay on GitHub" style="color:#c70d3a;"></i>
+      				<a style="color:#84253e;font-weight:600;margin-left:5%;" href="https://github.com/vijayrocky648" target="_blank" target="_blank">GitHub</a>
       			</div>
       			<div class="d-flex align-items-center justify-content-center" style="cursor:pointer;margin-top:5%;">
-      				<img src="https://img.icons8.com/office/40/000000/linkedin.png" style="height:40px;width:40px;" data-toggle="tooltip" data-placement="top" title="View Vijay on LinkedIn">
-      				<a style="color:#84253e;font-weight:600;margin-left:4%;" href="https://www.naukri.com/mnjuser/homepage" target="_blank">LinkedIn</a>
+      				<i class="fab fa-linkedin" data-toggle="tooltip" data-placement="top" title="View Vijay on LinkedIN" style="color:#504658;"></i>
+      				<a style="color:#84253e;font-weight:600;margin-left:4%;" href="https://www.linkedin.com/in/vijay-ramesh-104231192/" target="_blank">LinkedIn</a>
       			</div>
       		</div>
       	</div>
@@ -436,7 +468,9 @@
  	 		<div class="col-md-5" >
  	 			<div class="card" style="padding:10px 20px 0px 20px;box-shadow: 2px 2px 13px 0px rgba(0,0,0,0.75);border-radius:15px;" id="education-content">
  	 				<div class="card-title">
- 	 				<a href="http://gurunanakcollege.edu.in/" target="_blank"><h3 style="color:#7c0a02;font-weight:bold;font-family: 'Raleway', sans-serif;margin-bottom:0px;cursor:pointer;">Guru Nanak College (2014-2017)</h3></a>
+ 	 				<a href="http://gurunanakcollege.edu.in/" target="_blank">
+ 	 					<h3 style="color:#7c0a02;font-weight:bold;font-family: 'Raleway', sans-serif;margin-bottom:0px;cursor:pointer;">Guru Nanak College (2014-2017)</h3>
+ 	 				</a>
  	 				<h4 style="color:#7c0a02;font-weight:100;font-family: 'Raleway', sans-serif;">Velechery,Chennai</h4>
  	 				</div>
  	 				<hr style="border-bottom:1px solid black">
@@ -450,8 +484,12 @@
  	 	</div>
  	 </div> 
 </section>  
+<footer>
+	Created and Design by Vijay
+</footer>
  </div>
 </div>
+
 <!--Content--->
 </div>
 </body>
